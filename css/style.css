@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/* --------------------------------------------------- */
+.wrapper {
+    min-height: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+}
+
+/* --------------------------------------------------- */
+.container {
+    max-width: 1104px;
+    /* padding: 0px 15px; */
+    margin: 0px auto;
+    /* box-sizing: border-box; */
+}
+
+.footer {
+    width: 100%;
+    background-image: url('../img/footer/rectangle.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.footer__back-image {}
+
+.footer__text {
+    height: 400px;
+    width: 844px;
+    border-radius: 0px;
+}
+
+.footer__header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 59px;
+}
+
+.footer__form {}
+
+.footer__images {}
+
+.footer__logo {}
+
+.footer__paws {}
+
+.footer__contacts {}
+
+.footer__company-about {}
+
+.company-about__item {}
+
+.contacts__social {}
+
+.contacts__mobile {}
+
+.footer__image {}
