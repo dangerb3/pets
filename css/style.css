@@ -89,7 +89,7 @@ h6 {
 
 
 /* --------------------------------------------------- */
-.wrapper {
+body {
     min-height: 100%;
     overflow: visible;
     display: flex;
@@ -102,7 +102,6 @@ h6 {
     max-width: 1104px;
     /* padding: 0px 15px; */
     margin: 0px auto;
-    /* box-sizing: border-box; */
 }
 
 .footer {
@@ -112,21 +111,23 @@ h6 {
     background-position: 0px 0px;
 }
 
-.footer__back-image {}
-
 .footer__text {
     height: 400px;
     width: 844px;
-    border-radius: 0px;
 }
 
-.footer__header {
+.footer__title {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
     margin-top: 59px;
+}
+
+
+.footer__wrapper {
+    display: flex;
 }
 
 .footer__form {}
@@ -141,10 +142,17 @@ h6 {
 
 .footer__company-about {}
 
-.company-about__item {}
+.footer__company-about-item {}
 
-.contacts__social {}
+.footer__contacts-social {}
 
-.contacts__mobile {}
+.footer__contacts-social-link {}
 
-.footer__image {}
+.footer__contacts-mobile {}
+
+.footer__image {
+    height: 320px;
+    width: 611px;
+
+
+}
