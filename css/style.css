@@ -99,7 +99,7 @@ body {
 
 /* --------------------------------------------------- */
 .container {
-    max-width: 1104px;
+    max-width: 1140px;
     /* padding: 0px 15px; */
     margin: 0px auto;
 }
@@ -150,6 +150,10 @@ body {
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.footer__form>input:nth-child(2) {
+    width: 172px;
 }
 
 .footer__form>input:not(:last-child) {
