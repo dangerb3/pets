@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Montserrat';
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: 0px auto;
+}
+.callback-bt {
+        background-image: url('../img/help-dog.svg');
+        background-repeat: no-repeat;
+        cursor:pointer;
+        height:235px;
+        text-align:center;
+        width:235px;
+        position: fixed;
+        right: 39px;
+        top: 385px;
+        z-index:999;
+}
+.callback-bt .text-help{
+        height:68px;
+        width:100%;        
+        position:absolute;
+        overflow:hidden;
+        right: 0px;
+        bottom: 46px;
+        z-index: 1000000;
+}
+
+.callback-bt .text-help span {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
