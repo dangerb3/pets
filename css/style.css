@@ -91,7 +91,9 @@ h6 {
 /* --------------------------------------------------- */
 body {
     min-height: 100%;
-    overflow: visible;
+    overflow-x: hidden;
+    max-width: 100%;
+
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat';
@@ -134,18 +136,187 @@ body {
     left: -28px;
 }
 
+.swiper {
+    width: 100%;
+
+}
+
+.news-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 29px;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.swiper-slide {
+    padding-right: 18px;
+    padding-bottom: 14px;
+}
+
+.swiper-control {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.swiper-pagination {
+    position: static;
+    transform: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    border: 6px solid #F96B0A;
+    border-radius: 50%;
+    color: #000000 !important;
+    width: 34px;
+    height: 34px;
+    position: static;
+    margin-top: 0px;
+}
+
+.swiper-button-next::after {
+    font-size: 20px !important;
+
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f061" !important;
+}
+
+.swiper-button-prev::after {
+    font-size: 20px !important;
+
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    content: "\f060" !important;
+}
+
+.pagination-bullets {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+
+.partner-control {
+    margin-top: 22px;
+}
+
+.partner-pag {
+    margin-right: 11px;
+    margin-left: 11px;
+}
+
+.pagination-bullets span+span {
+    margin-right: 9px;
+}
+
+.page__slider_1 {
+    margin-top: 52px;
+}
+
+.page__slider_2 {
+    margin-top: 22px;
+    margin-bottom: 67px;
+}
+
+
+
+
+/* --------------------------------------------------- */
+
+
+.detail {
+    display: flex;
+    align-items: center;
+    /* padding: 0 0 76px; */
+    margin-top: 79px;
+}
+
+.detail__rectangle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1127px;
+    height: 167px;
+    background: #f96b0a;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 40px;
+    padding: 46px 36px 28px 168px;
+}
+
+.detail__rectangle::before {
+    position: absolute;
+    content: "";
+    width: 162px;
+    height: 153px;
+    top: 4px;
+    left: 0px;
+    background-image: url(../img/partner/detail-paws.svg);
+    background-repeat: no-repeat;
+}
+
+.detail__img {
+    width: 187px;
+    height: 150px;
+}
+
+.detail-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.detail-btn {
+    position: relative;
+    width: 96px;
+    height: 23px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #f96b0a;
+    cursor: pointer;
+    align-self: end;
+    margin-right: 34px;
+}
+
+.detail-btn::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -6px;
+    right: -35px;
+    background-image: url(../img/partner/detail-paw.svg);
+    background-repeat: no-repeat;
+}
+
+
+
 /* --------------------------------------------------- */
 
 .footer {
     width: 100%;
     height: 400px;
     position: relative;
-    /* background-image: url('../img/footer/rectangle.svg'), url('/img/footer/animals1.jpg');
-
-    background-repeat: no-repeat no-repeat;
-    background-position: left,
-        right;
-    background-size: 844px 400px, 611px 320px; */
+    /* bottom: -200px; */
 }
 
 .footer::before {
@@ -153,7 +324,7 @@ body {
     position: absolute;
     background-image: url(../img/footer/rectangle-paws.svg);
     background-repeat: no-repeat;
-    background-position: top 0px left 0px;
+    background-position: top 10px left 0px;
     background-size: contain;
 
     width: 60%;
@@ -196,6 +367,17 @@ body {
 .footer__wrapper {
     /* display: flex; */
     width: 60%;
+}
+
+.footer__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 89px;
+    top: -80px;
+    left: 32%;
+    background-image: url(../img/registration/reg-bone.svg);
+    background-repeat: no-repeat;
 }
 
 .footer__form {
@@ -372,10 +554,44 @@ body {
     margin-top: 42px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .page__breeder:last-child {
     width: 100%;
+}
+
+
+.page__breeder::before {
+
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 308px;
+    top: -150px;
+    left: -305px;
+    background-image: url(../img/dog-like.png);
+    background-repeat: no-repeat;
+    background-position: top 0px left 0px;
+    background-size: contain;
+
+    z-index: -20;
+
+}
+
+.page__breeder::after {
+
+    content: "";
+    position: absolute;
+    width: 264px;
+    height: 287px;
+    top: -210px;
+    background-size: contain;
+    background-position: top 0px right 0px;
+    right: -295px;
+    background-image: url(../img/index1/paw-right.svg);
+    background-repeat: no-repeat;
+
 }
 
 .page__breeder-description {
@@ -542,10 +758,38 @@ body {
 
 /* --------------------------------------------------- */
 
-.page__news {}
+.page__news {
+    position: relative;
+}
 
 .page__news-title {
     margin-top: 81px;
+    position: relative;
+}
+
+.page__news-title::before {
+    content: "";
+    background-image: url('../img/index1/animals.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 219px;
+    height: 146px;
+    top: 340px;
+    left: -310px;
+}
+
+.page__news-title::after {
+    content: "";
+    background-image: url('../img/maze.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    top: -177px;
+    right: 200px;
+    z-index: -10;
 }
 
 .page__news-divider {
@@ -642,12 +886,38 @@ body {
 .page__faq {
     width: 100%;
     margin-top: 44px;
+    margin-bottom: 133px;
 }
 
 .page__faq-head {
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.page__faq-head::after {
+    content: '';
+    position: absolute;
+    background-image: url('/img/index3/ball.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 83px;
+    height: 79px;
+    top: -10px;
+    right: 172px;
+}
+
+.page__faq-head::before {
+    content: '';
+    position: absolute;
+    background-image: url('/img/index3/cat.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 238px;
+    height: 220px;
+    top: 290px;
+    right: -100px;
 }
 
 .page__faq-image {
@@ -768,7 +1038,9 @@ body {
 
 /* - Лук чаты -------------------------------------------------- */
 
-.page__chats {}
+.page__chats {
+    margin-bottom: 141px;
+}
 
 .page__chats-title {}
 
@@ -832,6 +1104,7 @@ body {
 }
 
 .page__chats-content-item-info-description-contacts {
+    margin-top: 6px;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -952,4 +1225,6 @@ body {
     width: 490px;
     border: none;
     border-bottom: 1px solid #F96B0A;
+    padding-left: 13px;
+
 }
