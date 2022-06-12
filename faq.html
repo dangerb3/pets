@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css">
+
 
 
 
@@ -16,8 +19,111 @@
 
 <body>
     <header class="header">
-
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-top">
+                    <div class="header-category">
+                        <a href="/category.html" class="nav__link">
+                            <img src="/img/header/category.svg" alt="" class="icon" />Категории</a>
+                    </div>
+                    <div class="header-logo">
+                        <a href="/index.html" class="nav__link">
+                            <img src="/img/header/logo.svg" alt="" class="logo-img" />
+                        </a>
+                    </div>
+                    <div class="header-city">
+                        <img src="/img/header/location.svg" alt="" class="icon" />Минск
+                    </div>
+                    <div class="header-search">
+                        <form action="" class="search">
+                            <input type="search" class="search-input" nane="search" placeholder="Быстрый поиск" />
+                            <button class="search-bottom">
+                                <img src="/img/header/button.svg" alt="" class="icon" />
+                            </button>
+                        </form>
+                    </div>
+                    <nav class="header-nav nav">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="/about.html" class="nav__link"><img src="/img/header/about.svg" alt="about"
+                                        class="icon" />О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contacts.html" class="nav__link"><img src="/img/header/contact.svg"
+                                        alt="contacts" class="icon" />Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav__link"><img src="/img/header/help.svg" alt="help"
+                                        class="icon" />Помощь</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav__link"><img src="/img/header/cabinet.svg" alt=""
+                                        class="icon" />Кабинет</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav__link"><img src="/img/header/question.svg" alt=""
+                                        class="nav__icon" /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-filter">
+                    <form action="" class="filter">
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="category" value="Все категории" />
+                            <div class="select__head">Все категории</div>
+                            <ul class="select__list" style="display: none">
+                                <li class="select__item">Все категории</li>
+                                <li class="select__item">Категория 1</li>
+                                <li class="select__item">Категория 2</li>
+                                <li class="select__item">Категория 4</li>
+                                <li class="select__item">Категория 4</li>
+                                <li class="select__item">Категория 4</li>
+                                <li class="select__item">Категория 4</li>
+                                <li class="select__item">Категория 4</li>
+                                <li class="select__item">Категория 4</li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="animal" value="Кошки" />
+                            <div class="select__head">Кошки</div>
+                            <ul class="select__list" style="display: none">
+                                <li class="select__item">Кошки</li>
+                                <li class="select__item">Собаки</li>
+                                <li class="select__item">Хомяки</li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="breed" value="Все породы" />
+                            <div class="select__head">Все породы</div>
+                            <ul class="select__list" style="display: none">
+                                <li class="select__item">Все породы</li>
+                                <li class="select__item">Порода 1</li>
+                                <li class="select__item">Порода 2</li>
+                                <li class="select__item">Порода 4</li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="City" value="Все города" />
+                            <div class="select__head">Все города</div>
+                            <ul class="select__list" style="display: none">
+                                <li class="select__item">Все города</li>
+                                <li class="select__item">Спб</li>
+                                <li class="select__item">Москва</li>
+                                <li class="select__item">Минск</li>
+                            </ul>
+                        </div>
+                        <input class="filter-button" type="submit" value="Найти" />
+                    </form>
+                </div>
+            </div>
+        </div>
     </header>
+    <section class="hero hero--second">
+        <div class="container">
+        </div>
+    </section>
+
     <main class="page">
         <div class="container">
             <div class="page__faq">
@@ -26,14 +132,6 @@
                     <div class="page__faq-title">Часто задаваемые вопросы</div>
                 </div>
                 <div class="page__faq-content">
-
-                    <!-- <div class="page__faq-content-item item_closed">
-                        Ворпос вопрос вопрос вопрос вопрос
-                    </div>
-                    <div class="page__faq-content-item item_opened">
-                        Ворпос вопрос вопрос вопрос вопрос
-                    </div>
-                     -->
                     <div class="accordion">
                         <div class="accordion__item">
                             <div class="accordion__header">
@@ -106,17 +204,93 @@
                                 Ворпос вопрос вопрос вопрос вопрос
                             </div>
                             <div class="accordion__body">
-                                Ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
-                                ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ </div>
+                                <div class="accordion__body-item">
+                                    <div class="accordion__body-item-content">
+                                        Ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+
+                                    </div>
+                                    <div class="accordion__body-item-img"></div>
+                                </div>
+                                <div class="accordion__body-item">
+                                    <div class="accordion__body-item-content">
+                                        Ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+                                        ответ
+                                        ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ ответ
+
+                                    </div>
+                                    <div class="accordion__body-item-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                Ворпос вопрос вопрос вопрос вопрос
+                            </div>
+                            <div class="accordion__body">
+                                Содержимое
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                Ворпос вопрос вопрос вопрос вопрос
+                            </div>
+                            <div class="accordion__body">
+                                Содержимое
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                Ворпос вопрос вопрос вопрос вопрос
+                            </div>
+                            <div class="accordion__body">
+                                Содержимое
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                Ворпос вопрос вопрос вопрос вопрос
+                            </div>
+                            <div class="accordion__body">
+                                Содержимое
+                            </div>
                         </div>
 
                     </div>
