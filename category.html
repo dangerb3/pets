@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title> Four Look Paws</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-top">
+            <div class="header-category">
+              <a href="/category.html" class="nav__link">
+              <img
+                src="/img/header/category.svg"
+                alt=""
+                class="icon"
+              />Категории</a>
+            </div>
+            <div class="header-logo">
+              <a href="/index.html" class="nav__link">
+<img src="/img/header/logo.svg" alt="" class="logo-img" />
+              </a>
+            </div>
+            <div class="header-city">
+              <img src="/img/header/location.svg" alt="" class="icon" />Минск
+            </div>
+            <div class="header-search">
+              <form action="" class="search">
+                <input
+                  type="search"
+                  class="search-input"
+                  nane="search"
+                  placeholder="Быстрый поиск"
+                />
+                <button class="search-bottom">
+                  <img src="/img/header/button.svg" alt="" class="icon" />
+                </button>
+              </form>
+            </div>
+            <nav class="header-nav nav">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="/about.html" class="nav__link"
+                    ><img
+                      src="/img/header/about.svg"
+                      alt="about"
+                      class="icon"
+                    />О нас</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/contacts.html" class="nav__link"
+                    ><img
+                      src="/img/header/contact.svg"
+                      alt="contacts"
+                      class="icon"
+                    />Контакты</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav__link"
+                    ><img
+                      src="/img/header/help.svg"
+                      alt="help"
+                      class="icon"
+                    />Помощь</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav__link"
+                    ><img
+                      src="/img/header/cabinet.svg"
+                      alt=""
+                      class="icon"
+                    />Кабинет</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav__link"
+                    ><img
+                      src="/img/header/question.svg"
+                      alt=""
+                      class="nav__icon"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-filter">
+            <form action="" class="filter">
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="category"
+                  value="Все категории"
+                />
+                <div class="select__head">Все категории</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все категории</li>
+                  <li class="select__item">Категория 1</li>
+                  <li class="select__item">Категория 2</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="animal"
+                  value="Кошки"
+                />
+                <div class="select__head">Кошки</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Кошки</li>
+                  <li class="select__item">Собаки</li>
+                  <li class="select__item">Хомяки</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="breed"
+                  value="Все породы"
+                />
+                <div class="select__head">Все породы</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все породы</li>
+                  <li class="select__item">Порода 1</li>
+                  <li class="select__item">Порода 2</li>
+                  <li class="select__item">Порода 4</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="City"
+                  value="Все города"
+                />
+                <div class="select__head">Все города</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все города</li>
+                  <li class="select__item">Спб</li>
+                  <li class="select__item">Москва</li>
+                  <li class="select__item">Минск</li>
+                </ul>
+              </div>
+              <input class="filter-button" type="submit" value="Найти" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero hero--second">
+      <div class="container">
+      </div>
+    </section>
+    <section class="category">
+      <div class="container">
+        <div class="category-wrapper">
+          <div class="category-header">
+            <div class="category-item">
+              <img src="/img/category/bredeer.svg" alt="breeder" class="category__img">
+              <span class="category-name">Заводчики</span>
+            </div>
+            <div class="category-item">
+              <img src="/img/category/service.svg" alt="service" class="category__img">
+              <span class="category-name">Услуги</span>
+            </div>
+            <div class="category-item active">
+              <img src="/img/category/vat-clinics.svg" alt="Vet clinics" class="category__img">
+              <span class="category-name">Ветклиники</span>
+            </div>
+            <div class="category-item">
+              <img src="/img/category/petshop.svg" alt="petshop" class="category__img">
+              <span class="category-name">Зоомагазины</span>
+            </div>
+            <div class="category-item">
+              <img src="/img/category/useful.svg" alt="useful" class="category__img">
+              <span class="category-name">Полезное</span>
+            </div>
+          </div>
+          <div class="category-line"></div>
+          <div class="category-main">
+            <aside class="category-filter">
+              <h5 class="fit-title">Фильтры:</h5>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="City"
+                  value="Все города"
+                />
+                <div class="select__head">Все города</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все города</li>
+                  <li class="select__item">Спб</li>
+                  <li class="select__item">Москва</li>
+                  <li class="select__item">Минск</li>
+                </ul>
+              </div>
+              <div class="animal">
+                <div class="animal-item active"><img src="/img/category/cat-orange.svg" alt="" class="animal_icon"><img src="/img/category/cat.svg" alt="" class="animal_icon2">Кошки</div>
+                <div class="animal-item"><img src="/img/category/dog.svg" alt="" class="animal_icon"><img src="/img/category/dog-white.svg" alt="" class="animal_icon2">Собаки</div>
+              </div>
+              <div class="age">
+                <h5 class="age-title">Возраст</h5>
+                <ul class="age-list">
+                  <li class="age-item">
+                    до 1 года
+                  </li>
+                  <li class="age-item active">
+                    от 1 до 3 лет
+                  </li>
+                  <li class="age-item">
+                    от 3 до 9 лет
+                  </li>
+                  <li class="age-item">
+                    после 9 лет
+                  </li>
+                </ul>
+              </div>
+              <div class="bread">
+                <h5 class="bread-title">Порода</h5>
+                <ul class="bread-list">
+                  <li class="bread-item">
+                    Порода 1
+                  </li>
+                  <li class="bread-item">
+                    Порода 2
+                  </li>
+                  <li class="bread-item">
+                    Порода 3
+                  </li>
+                  <li class="bread-item">
+                    Порода 4
+                  </li>
+                  <li class="bread-item">
+                    Порода 5
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <div class="category-right">
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              <div class="cat-item">
+                <div class="item-block cati">
+                  <div class="cati-img"></div>
+                  <div class="cati-text">
+                    <h4 class="cati__name">Длинное название</h4>
+                    <p class="cati__address">г. Санкт-Петербург,ул. Непокаренных д.132</p>
+                    <a href="tel:88005553535" class="cati__link">8 800 555 35 35</a>
+                    <a href="webwebweb.com" class="cati__link">webwebweb.com</a>
+                    <p class="cati__text">
+                      Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание 
+                    </p>
+                  </div>
+                </div>
+                <div class="cati-link">
+                  <a href="#" class="cati__link">Подробнее</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="swiper-control filter-control">
+              <div class="swiper-button-prev"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination partner-pag">
+                <span class="pagination-bullets">1</span>
+                <span class="pagination-bullets">2</span>
+                <span class="pagination-bullets">3</span>
+                <span class="pagination-bullets">4</span>
+                <span class="pagination-bullets">...</span>
+              </div>
+
+              <!-- If we need navigation buttons -->
+
+              <div class="swiper-button-next"></div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+        <footer class="footer footer--fifth">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__text">
+                    <div class="footer__title">Будьте в курсе событий</div>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Ваш e-mail*">
+                        <input type="text" placeholder="Ваше имя">
+                        <button>Подписаться</button>
+                    </form>
+                    <div class="footer__images">
+                        <div class="footer__logo">
+                            <img src="./img/footer/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__company-about">
+                            <div class="footer__company-about-item">© L4P 2022 "Лук фо паус"</div>
+                            <div class="footer__company-about-item"><a>Политика конфиденциальности</a>></div>
+                        </div>
+                        <div class="footer__contacts-data">
+                            <div class="footer__contacts-social">
+                                <a class="footer__contacts-social-link" href=""> <img src="./img/footer/social/VK.svg"
+                                        alt="vk">
+                                </a>
+                                <a class="footer__contacts-social-link" href=""> <img
+                                        src="./img/footer/social/WhatsApp.svg" alt="whatsapp">
+                                </a>
+                                <a class="footer__contacts-social-link" href=""> <img src="./img/footer/social/TG.svg"
+                                        alt="telegram">
+                                </a>
+                                <a class="footer__contacts-social-link" href=""> <img
+                                        src="./img/footer/social/Instagram.svg" alt="instagram">
+                                </a>
+
+                            </div>
+                            <div class="footer__contacts-mobile">+375 29 718 54 48</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>
