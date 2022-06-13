@@ -40,16 +40,7 @@
   position: relative;
   padding-top: 244px;
 }
-.about::after {
-  position: absolute;
-  content: "";
-  width: 125px;
-  height: 89px;
-  left: 31%;
-  bottom: 8px;
-  background-image: url(../img/registration/reg-bone.svg);
-  background-repeat: no-repeat;
-}
+
 .about__title {
   position: relative;
   font-style: normal;

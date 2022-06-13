@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
-
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/breeder.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/header.css" />
+    
+    <link rel="stylesheet" href="css/main-page.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/breeder.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
 
@@ -21,111 +30,164 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="header-top">
-                    <div class="header-category">
-                        <a href="/category.html" class="nav__link">
-                            <img src="/img/header/category.svg" alt="" class="icon" />Категории</a>
-                    </div>
-                    <div class="header-logo">
-                        <a href="/index.html" class="nav__link">
-                            <img src="/img/header/logo.svg" alt="" class="logo-img" />
-                        </a>
-                    </div>
-                    <div class="header-city">
-                        <img src="/img/header/location.svg" alt="" class="icon" />Минск
-                    </div>
-                    <div class="header-search">
-                        <form action="" class="search">
-                            <input type="search" class="search-input" nane="search" placeholder="Быстрый поиск" />
-                            <button class="search-bottom">
-                                <img src="/img/header/button.svg" alt="" class="icon" />
-                            </button>
-                        </form>
-                    </div>
-                    <nav class="header-nav nav">
-                        <ul class="nav-menu">
-                            <li class="nav-item">
-                                <a href="/about.html" class="nav__link"><img src="/img/header/about.svg" alt="about"
-                                        class="icon" />О нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/contacts.html" class="nav__link"><img src="/img/header/contact.svg"
-                                        alt="contacts" class="icon" />Контакты</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav__link"><img src="/img/header/help.svg" alt="help"
-                                        class="icon" />Помощь</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav__link"><img src="/img/header/cabinet.svg" alt=""
-                                        class="icon" />Кабинет</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav__link"><img src="/img/header/question.svg" alt=""
-                                        class="nav__icon" /></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-filter">
-                    <form action="" class="filter">
-                        <div class="select">
-                            <input class="select__input" type="hidden" name="category" value="Все категории" />
-                            <div class="select__head">Все категории</div>
-                            <ul class="select__list" style="display: none">
-                                <li class="select__item">Все категории</li>
-                                <li class="select__item">Категория 1</li>
-                                <li class="select__item">Категория 2</li>
-                                <li class="select__item">Категория 4</li>
-                                <li class="select__item">Категория 4</li>
-                                <li class="select__item">Категория 4</li>
-                                <li class="select__item">Категория 4</li>
-                                <li class="select__item">Категория 4</li>
-                                <li class="select__item">Категория 4</li>
-                            </ul>
-                        </div>
-                        <div class="select">
-                            <input class="select__input" type="hidden" name="animal" value="Кошки" />
-                            <div class="select__head">Кошки</div>
-                            <ul class="select__list" style="display: none">
-                                <li class="select__item">Кошки</li>
-                                <li class="select__item">Собаки</li>
-                                <li class="select__item">Хомяки</li>
-                            </ul>
-                        </div>
-                        <div class="select">
-                            <input class="select__input" type="hidden" name="breed" value="Все породы" />
-                            <div class="select__head">Все породы</div>
-                            <ul class="select__list" style="display: none">
-                                <li class="select__item">Все породы</li>
-                                <li class="select__item">Порода 1</li>
-                                <li class="select__item">Порода 2</li>
-                                <li class="select__item">Порода 4</li>
-                            </ul>
-                        </div>
-                        <div class="select">
-                            <input class="select__input" type="hidden" name="City" value="Все города" />
-                            <div class="select__head">Все города</div>
-                            <ul class="select__list" style="display: none">
-                                <li class="select__item">Все города</li>
-                                <li class="select__item">Спб</li>
-                                <li class="select__item">Москва</li>
-                                <li class="select__item">Минск</li>
-                            </ul>
-                        </div>
-                        <input class="filter-button" type="submit" value="Найти" />
-                    </form>
-                </div>
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-top">
+            <div class="header-category">
+              <a href="/category.html" class="nav__link">
+              <img
+                src="/img/header/category.svg"
+                alt=""
+                class="icon"
+              />Категории</a>
             </div>
+            <div class="header-logo">
+              <a href="/index.html" class="nav__link">
+<img src="/img/header/logo.svg" alt="" class="logo-img" />
+              </a>
+              
+            </div>
+            <div class="header-city">
+              <img src="/img/header/location.svg" alt="" class="icon" />Минск
+            </div>
+            <div class="header-search">
+              <form action="" class="search">
+                <input
+                  type="search"
+                  class="search-input"
+                  nane="search"
+                  placeholder="Быстрый поиск"
+                />
+                <button class="search-bottom">
+                  <img src="/img/header/button.svg" alt="" class="icon" />
+                </button>
+              </form>
+            </div>
+            <nav class="header-nav nav">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="/about.html" class="nav__link"
+                    ><img
+                      src="/img/header/about.svg"
+                      alt="about"
+                      class="icon"
+                    />О нас</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/contacts.html" class="nav__link"
+                    ><img
+                      src="/img/header/contact.svg"
+                      alt="contacts"
+                      class="icon"
+                    />Контакты</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/faq.html" class="nav__link"
+                    ><img
+                      src="/img/header/help.svg"
+                      alt="help"
+                      class="icon"
+                    />Помощь</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/account.html" class="nav__link"
+                    ><img
+                      src="/img/header/cabinet.svg"
+                      alt=""
+                      class="icon"
+                    />Кабинет</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="chats.html" class="nav__link"
+                    ><img
+                      src="/img/header/question.svg"
+                      alt=""
+                      class="nav__icon"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-filter">
+            <form action="" class="filter">
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="category"
+                  value="Все категории"
+                />
+                <div class="select__head">Все категории</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все категории</li>
+                  <li class="select__item">Категория 1</li>
+                  <li class="select__item">Категория 2</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                  <li class="select__item">Категория 4</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="animal"
+                  value="Кошки"
+                />
+                <div class="select__head">Кошки</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Кошки</li>
+                  <li class="select__item">Собаки</li>
+                  <li class="select__item">Хомяки</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="breed"
+                  value="Все породы"
+                />
+                <div class="select__head">Все породы</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все породы</li>
+                  <li class="select__item">Порода 1</li>
+                  <li class="select__item">Порода 2</li>
+                  <li class="select__item">Порода 4</li>
+                </ul>
+              </div>
+              <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="City"
+                  value="Все города"
+                />
+                <div class="select__head">Все города</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item">Все города</li>
+                  <li class="select__item">Спб</li>
+                  <li class="select__item">Москва</li>
+                  <li class="select__item">Минск</li>
+                </ul>
+              </div>
+              <input class="filter-button" type="submit" value="Найти" />
+            </form>
+          </div>
         </div>
+      </div>
     </header>
-    <section class="hero hero--second">
-        <div class="container">
-        </div>
+<section class="hero hero--second">
+      <div class="container">
+      </div>
     </section>
-
     <main class="page">
         <div class="container_short">
             <div class="page__content">
@@ -169,7 +231,7 @@
                     <button class="page__breeder-description-button">Задать вопрос</button>
                 </div>
                 <div class="page__breeder-map">
-                    <img src="./img/index1/map.jpg" alt="map">
+                    <img src="../img/index1/map.jpg" alt="map">
                 </div>
                 <div class="page__breeder-full-description">Описание Описание Описание Описание Описание Описание
                     Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
@@ -275,75 +337,73 @@
             </div>
             <img class="detail__img" src="img/partner/detail-pets.jpg" alt="pet image" />
         </section>
-
-        <div class="container">
+        <section class="vip-news">
+<div class="container">
             <div class="page__news">
                 <h1 class="page__news-title title container_short">
                     Новости от VIP партнёров
                 </h1>
 
                 <div class="page__news-divider"></div>
-                <div class="page__news-content">
-                    <div class="page__news-content-item">
-                        <div class="page__news-content-item-description">
-                            <h2 class="page__news-content-item-description-title">Длинное название</h2>
-
-                            <div class="page__news-content-item-description-contacts">
-                                <p class="page__news-content-item-description-contacts-link">
-                                    <a href="webwebweb.com">webwebweb.com
-                                    </a>
-                                </p>
-                                какая-то информация
-                            </div>
-                        </div>
-                        <img src="" alt="" class="page__news-content-item-image">
-                        <div class="page__news-content-item-full-description">
-                            Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
-                            Описание Описание
-                        </div>
-                    </div>
-                    <div class="page__news-content-item">
-                        <div class="page__news-content-item-description">
-                            <h2 class="page__news-content-item-description-title">Длинное название</h2>
-
-                            <div class="page__news-content-item-description-contacts">
-                                <p class="page__news-content-item-description-contacts-link">
-                                    <a href="webwebweb.com">webwebweb.com
-                                    </a>
-                                </p>
-                                какая-то информация
-                            </div>
-                        </div>
-                        <img src="" alt="" class="page__news-content-item-image">
-                        <div class="page__news-content-item-full-description">
-                            Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание
-                            Описание Описание
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="page__slider_2">
-                <div class="swiper-control partner-control">
-                    <div class="swiper-button-prev"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination partner-pag">
-                        <span class="pagination-bullets">1</span>
-                        <span class="pagination-bullets">2</span>
-                        <span class="pagination-bullets">3</span>
-                        <span class="pagination-bullets">4</span>
-                        <span class="pagination-bullets">...</span>
-                    </div>
-
-                    <!-- If we need navigation buttons -->
-
-                    <div class="swiper-button-next"></div>
+            <div class="addContainer">
+            <div class="swiper slider-news">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide">
+                <div class="slide-header">
+                  <h4 class="new-title">Длинное название</h4>
+                  <div class="new-info">
+                    <div class="new-site">webwebweb.com</div>
+                    <div class="new-addInfo">какая-то информация</div>
+                  </div>
                 </div>
+                <div class="slide-img"></div>
+                <div class="slide-footer">
+                  <p class="new-description">
+                    Описание Описание Описание Описание Описание Описание
+                    Описание Описание Описание Описание Описание Описание
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <div class="slide-header">
+                  <h4 class="new-title">Длинное название</h4>
+                  <div class="new-info">
+                    <div class="new-site">webwebweb.com</div>
+                    <div class="new-addInfo">какая-то информация</div>
+                  </div>
+                </div>
+                <div class="slide-img">
+                  <!-- <img src="#" alt="" class="slide__img"/>   -->
+                </div>
+                <div class="slide-footer">
+                  <p class="new-description">
+                    Описание Описание Описание Описание Описание Описание
+                    Описание Описание Описание Описание Описание Описание
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          </div>
         </div>
+        </section>
+        
 
 
     </main>
-    <footer class="footer footer--sixth">
+    <footer class="footer footer--ninth">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__text">
@@ -390,7 +450,10 @@
         </div>
 
     </footer>
-    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

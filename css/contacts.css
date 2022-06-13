@@ -39,16 +39,6 @@
   padding: 36px 0 155px;
   padding-top: 244px;
 }
-.contacts::after {
-  position: absolute;
-  content: "";
-  width: 125px;
-  height: 89px;
-  left: 31%;
-  bottom: 8px;
-  background-image: url(../img/registration/reg-bone.svg);
-  background-repeat: no-repeat;
-}
 .contacts-title {
   position: relative;
   font-style: normal;

@@ -43,16 +43,6 @@
   flex-direction: column;
   align-items: center;
 }
-.registration__form::after {
-  content: "";
-  position: absolute;
-  width: 125px;
-  height: 89px;
-  bottom: -134px;
-  left: -61px;
-  background-image: url(../img/registration/reg-bone.svg);
-  background-repeat: no-repeat;
-}
 .registration__title {
   font-style: normal;
   font-weight: 600;

@@ -1,7 +1,7 @@
-/* - Лук Заводчик -------------------------------------------------- */
-
 .page {
     margin-top: -15px;
+    position: relative;
+    margin-bottom: 97px;
 }
 
 .page__content {
@@ -39,6 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
 }
 
 .page__breeder:last-child {
@@ -46,40 +47,37 @@
 }
 
 
-.page__breeder::before {
-
+.page::before {
     content: "";
     position: absolute;
     width: 350px;
     height: 308px;
-    top: -150px;
-    left: -305px;
+    top: 330px;
+    left: 0px;
     background-image: url(../img/dog-like.png);
     background-repeat: no-repeat;
     background-position: top 0px left 0px;
     background-size: contain;
-
-    z-index: -20;
-
+    /* z-index: -20; */
 }
 
-.page__breeder::after {
+
+.page::after {
 
     content: "";
     position: absolute;
     width: 264px;
     height: 287px;
-    top: -210px;
+    top: 210px;
     background-size: contain;
     background-position: top 0px right 0px;
-    right: -295px;
+    right: 0;
     background-image: url(../img/index1/paw-right.svg);
     background-repeat: no-repeat;
 
 }
 
 .page__breeder-description {
-    margin-right: 42px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -250,8 +248,10 @@
     margin-top: 81px;
     position: relative;
 }
-
-.page__news-title::before {
+.vip-news{
+  position: relative;
+}
+.vip-news::before {
     content: "";
     background-image: url('../img/index1/animals.png');
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
     width: 219px;
     height: 146px;
     top: 340px;
-    left: -310px;
+    left: 0px;
 }
 
 .page__news-title::after {
@@ -363,3 +363,4 @@
 
     color: #000000;
 }
+

@@ -81,16 +81,7 @@
 .category-wrapper{
   position: relative;
 }
-.category-wrapper::after{
-  content: "";
-  position: absolute;
-  width: 125px;
-  height: 89px;
-  bottom: -55px;
-  left: 26%;
-  background-image: url(../img/registration/reg-bone.svg);
-  background-repeat: no-repeat;
-}
+
 .category::after{
   content: "";
   position: absolute;

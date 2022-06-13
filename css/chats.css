@@ -1,8 +1,29 @@
-/* - Лук чаты -------------------------------------------------- */
-
+.hero{
+  height: 100%;
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    background-size: 100%;
+    padding-top: 158px;
+    z-index: 0;
+}
+.hero--second::before{
+  content: "";
+    width: 100%;
+    height: 263px;
+    background-image: url(../img/header-2.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    position: absolute;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+.page{
+  padding-top: 35px;
+}
 .page__chats {
-    margin-top: 35px;
-    margin-bottom: 121px;
+    margin-bottom: 141px;
 }
 
 .page__chats-title {}

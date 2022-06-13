@@ -37,7 +37,6 @@
     top: 80px;
     right: 0;
 }
-
 .footer--second::after {
     content: "";
     position: absolute;
@@ -51,7 +50,6 @@
     top: 80px;
     right: 0;
 }
-
 .footer--third::after {
     content: "";
     position: absolute;
@@ -65,7 +63,6 @@
     top: 80px;
     right: 0;
 }
-
 .footer--fourth::after {
     content: "";
     position: absolute;
@@ -79,7 +76,6 @@
     top: 80px;
     right: 0;
 }
-
 .footer--fifth::after {
     content: "";
     position: absolute;
@@ -93,21 +89,19 @@
     top: 80px;
     right: 0;
 }
-
 .footer--sixth::after {
     content: "";
     position: absolute;
     background-image: url(../img/footer/dog-6.png);
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
-    background-size: cover;
-    height: 350px;
+    background-size: contain;
+    height: 76%;
     z-index: -27;
-    width: 443px;
-    top: 50px;
+    width: 41%;
+    top: 80px;
     right: 0;
 }
-
 .footer--seventh::after {
     content: "";
     position: absolute;
@@ -136,14 +130,36 @@
     right: 70px;
     top: 25px;
 }
+.footer--ninth::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/footer/dog-9.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px;
+    background-size: contain;
+    height: 351px;
+    z-index: -27;
+    width: 525px;
 
+    right: 70px;
+    top: 25px;
+}
 .footer__text {
     /* height: 400px;
     width: 844px; */
     display: flex;
     flex-direction: column;
 }
-
+.footer__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 89px;
+    top: -80px;
+    left: 32%;
+    background-image: url(../img/registration/reg-bone.svg);
+    background-repeat: no-repeat;
+}
 .footer__title {
     font-style: normal;
     font-weight: 600;
@@ -157,18 +173,6 @@
 .footer__wrapper {
     /* display: flex; */
     width: 60%;
-}
-
-
-.footer__wrapper::before {
-    content: "";
-    position: absolute;
-    width: 125px;
-    height: 89px;
-    top: -80px;
-    left: 32%;
-    background-image: url(../img/registration/reg-bone.svg);
-    background-repeat: no-repeat;
 }
 
 .footer__form {

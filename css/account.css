@@ -1,0 +1,34 @@
+.input-list {
+    min-height: 0px;
+}
+.become-partner{
+width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.become-button{
+  font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+color: #FFFFFF;
+padding: 22px 21px;
+background: #F96B0A;
+border-radius: 10px;
+position: relative;
+}
+.become-button::before{
+  content: "";
+  position: absolute;
+  width: 264px;
+  height: 184px;
+  top: -200px;
+      left: 27px;
+  background-image: url(../img/button-dog.png);
+  background-repeat: no-repeat;
+  background-position: top 0px left 0px;
+  background-size: contain;
+}
+.partner form {
+  margin-bottom: 38px;
+}
