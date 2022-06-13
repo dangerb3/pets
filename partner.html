@@ -1,226 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/partner.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <title>Four Look Paws</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
-          <div class="header-top">
-            <div class="header-category">
-              <a href="/category.html" class="nav__link">
-              <img
-                src="/img/header/category.svg"
-                alt=""
-                class="icon"
-              />Категории</a>
-            </div>
-            <div class="header-logo">
-              <a href="/index.html" class="nav__link">
-<img src="/img/header/logo.svg" alt="" class="logo-img" />
-              </a>
-              
-            </div>
-            <div class="header-city">
-              <img src="/img/header/location.svg" alt="" class="icon" />Минск
-            </div>
-            <div class="header-search">
-              <form action="" class="search">
-                <input
-                  type="search"
-                  class="search-input"
-                  nane="search"
-                  placeholder="Быстрый поиск"
-                />
-                <button class="search-bottom">
-                  <img src="/img/header/button.svg" alt="" class="icon" />
-                </button>
-              </form>
-            </div>
-            <nav class="header-nav nav">
-              <ul class="nav-menu">
-                <li class="nav-item">
-                  <a href="/about.html" class="nav__link"
-                    ><img
-                      src="/img/header/about.svg"
-                      alt="about"
-                      class="icon"
-                    />О нас</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="/contacts.html" class="nav__link"
-                    ><img
-                      src="/img/header/contact.svg"
-                      alt="contacts"
-                      class="icon"
-                    />Контакты</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="/faq.html" class="nav__link"
-                    ><img
-                      src="/img/header/help.svg"
-                      alt="help"
-                      class="icon"
-                    />Помощь</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="/account.html" class="nav__link"
-                    ><img
-                      src="/img/header/cabinet.svg"
-                      alt=""
-                      class="icon"
-                    />Кабинет</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="chats.html" class="nav__link"
-                    ><img
-                      src="/img/header/question.svg"
-                      alt=""
-                      class="nav__icon"
-                  /></a>
-                </li>
-              </ul>
-            </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/partner.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <title>Four Look Paws</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="header-category">
+            <a href="/category.html" class="nav__link">
+              <img src="/img/header/category.svg" alt="" class="icon" />Категории</a>
           </div>
-          <div class="header-filter">
-            <form action="" class="filter">
-              <div class="select">
-                <input
-                  class="select__input"
-                  type="hidden"
-                  name="category"
-                  value="Все категории"
-                />
-                <div class="select__head">Все категории</div>
-                <ul class="select__list" style="display: none">
-                  <li class="select__item">Все категории</li>
-                  <li class="select__item">Категория 1</li>
-                  <li class="select__item">Категория 2</li>
-                  <li class="select__item">Категория 4</li>
-                  <li class="select__item">Категория 4</li>
-                  <li class="select__item">Категория 4</li>
-                  <li class="select__item">Категория 4</li>
-                  <li class="select__item">Категория 4</li>
-                  <li class="select__item">Категория 4</li>
-                </ul>
-              </div>
-              <div class="select">
-                <input
-                  class="select__input"
-                  type="hidden"
-                  name="animal"
-                  value="Кошки"
-                />
-                <div class="select__head">Кошки</div>
-                <ul class="select__list" style="display: none">
-                  <li class="select__item">Кошки</li>
-                  <li class="select__item">Собаки</li>
-                  <li class="select__item">Хомяки</li>
-                </ul>
-              </div>
-              <div class="select">
-                <input
-                  class="select__input"
-                  type="hidden"
-                  name="breed"
-                  value="Все породы"
-                />
-                <div class="select__head">Все породы</div>
-                <ul class="select__list" style="display: none">
-                  <li class="select__item">Все породы</li>
-                  <li class="select__item">Порода 1</li>
-                  <li class="select__item">Порода 2</li>
-                  <li class="select__item">Порода 4</li>
-                </ul>
-              </div>
-              <div class="select">
-                <input
-                  class="select__input"
-                  type="hidden"
-                  name="City"
-                  value="Все города"
-                />
-                <div class="select__head">Все города</div>
-                <ul class="select__list" style="display: none">
-                  <li class="select__item">Все города</li>
-                  <li class="select__item">Спб</li>
-                  <li class="select__item">Москва</li>
-                  <li class="select__item">Минск</li>
-                </ul>
-              </div>
-              <input class="filter-button" type="submit" value="Найти" />
+          <div class="header-logo">
+            <a href="/index.html" class="nav__link">
+              <img src="/img/header/logo.svg" alt="" class="logo-img" />
+            </a>
+
+          </div>
+          <div class="header-city">
+            <img src="/img/header/location.svg" alt="" class="icon" />Минск
+          </div>
+          <div class="header-search">
+            <form action="" class="search">
+              <input type="search" class="search-input" nane="search" placeholder="Быстрый поиск" />
+              <button class="search-bottom">
+                <img src="/img/header/button.svg" alt="" class="icon" />
+              </button>
             </form>
           </div>
+          <nav class="header-nav nav">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="/about.html" class="nav__link"><img src="/img/header/about.svg" alt="about" class="icon" />О
+                  нас</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contacts.html" class="nav__link"><img src="/img/header/contact.svg" alt="contacts"
+                    class="icon" />Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a href="/faq.html" class="nav__link"><img src="/img/header/help.svg" alt="help"
+                    class="icon" />Помощь</a>
+              </li>
+              <li class="nav-item">
+                <a href="/account.html" class="nav__link"><img src="/img/header/cabinet.svg" alt=""
+                    class="icon" />Кабинет</a>
+              </li>
+              <li class="nav-item">
+                <a href="chats.html" class="nav__link"><img src="/img/header/question.svg" alt=""
+                    class="nav__icon" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-filter">
+          <form action="" class="filter">
+            <div class="select">
+              <input class="select__input" type="hidden" name="category" value="Все категории" />
+              <div class="select__head">Все категории</div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">Все категории</li>
+                <li class="select__item">Категория 1</li>
+                <li class="select__item">Категория 2</li>
+                <li class="select__item">Категория 4</li>
+                <li class="select__item">Категория 4</li>
+                <li class="select__item">Категория 4</li>
+                <li class="select__item">Категория 4</li>
+                <li class="select__item">Категория 4</li>
+                <li class="select__item">Категория 4</li>
+              </ul>
+            </div>
+            <div class="select">
+              <input class="select__input" type="hidden" name="animal" value="Кошки" />
+              <div class="select__head">Кошки</div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">Кошки</li>
+                <li class="select__item">Собаки</li>
+                <li class="select__item">Хомяки</li>
+              </ul>
+            </div>
+            <div class="select">
+              <input class="select__input" type="hidden" name="breed" value="Все породы" />
+              <div class="select__head">Все породы</div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">Все породы</li>
+                <li class="select__item">Порода 1</li>
+                <li class="select__item">Порода 2</li>
+                <li class="select__item">Порода 4</li>
+              </ul>
+            </div>
+            <div class="select">
+              <input class="select__input" type="hidden" name="City" value="Все города" />
+              <div class="select__head">Все города</div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">Все города</li>
+                <li class="select__item">Спб</li>
+                <li class="select__item">Москва</li>
+                <li class="select__item">Минск</li>
+              </ul>
+            </div>
+            <input class="filter-button" type="submit" value="Найти" />
+          </form>
         </div>
       </div>
-    </header>
-    <section class="hero hero--second">
-      <div class="container"></div>
-    </section>
-    <section class="partner">
-      <div class="container">
-        <h1 class="partner__title">Личный кабинет партнёра портала</h1>
-        <form action="">
-          <div class="upload-container">
-            <div class="upload-file__wrapper">
-          <div class="big-img">
-            <input type="file" name="files1" id="upload-file__input 0" class="upload-file__input 1" multiple  accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
+    </div>
+  </header>
+  <section class="hero hero--second">
+    <div class="container"></div>
+  </section>
+  <section class="partner">
+    <div class="container">
+      <h1 class="partner__title">Личный кабинет партнёра портала</h1>
+      <form action="">
+        <div class="upload-container">
+          <div class="upload-file__wrapper">
+            <div class="big-img">
+              <input type="file" name="files1" id="upload-file__input 0" class="upload-file__input 1" multiple
+                accept="image/jpeg,image/png,image/gif">
+              <label class="upload-file__label" for="upload-file__input">
+                <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                    stroke="#F96B0A" stroke-width="2" />
+                  <path
+                    d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                    fill="#F96B0A" />
+                </svg>
                 <span class="upload-file__text 1">Загрузить</span>
               </label>
-          </div>
+            </div>
           </div>
           <div class="small-imgs">
             <div class="upload-file__wrapper">
               <div class="sml2">
-              <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 2">Загрузить</span>
-              </label>
+                <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple
+                  accept="image/jpeg,image/png,image/gif">
+                <label class="upload-file__label" for="upload-file__input">
+                  <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                      stroke="#F96B0A" stroke-width="2" />
+                    <path
+                      d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                      fill="#F96B0A" />
+                  </svg>
+                  <span class="upload-file__text 2">Загрузить</span>
+                </label>
               </div>
             </div>
             <div class="upload-file__wrapper">
               <div class="sml3">
-              <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple  accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 3">Загрузить</span>
-              </label>
-            </div>
+                <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple
+                  accept="image/jpeg,image/png,image/gif">
+                <label class="upload-file__label" for="upload-file__input">
+                  <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                      stroke="#F96B0A" stroke-width="2" />
+                    <path
+                      d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                      fill="#F96B0A" />
+                  </svg>
+                  <span class="upload-file__text 3">Загрузить</span>
+                </label>
+              </div>
             </div>
           </div>
         </div>
@@ -230,12 +192,7 @@
           <div class="input-container">
             <div class="input-list">
               <div class="select partner-select">
-                <input
-                  class="select-input"
-                  type="hidden"
-                  name="town"
-                  value="Выберите город"
-                />
+                <input class="select-input" type="hidden" name="town" value="Выберите город" />
                 <div class="select__head select-head">Выберите город</div>
                 <ul class="select__list" style="display: none">
                   <li class="select__item">Выберите город</li>
@@ -244,12 +201,7 @@
                 </ul>
               </div>
               <div class="select partner-select">
-                <input
-                  class="select-input"
-                  type="hidden"
-                  name="breed"
-                  value="Выберите породы"
-                />
+                <input class="select-input" type="hidden" name="breed" value="Выберите породы" />
                 <div class="select__head select-head">Выберите породы</div>
                 <ul class="select__list" style="display: none">
                   <li class="select__item">Выберите породы</li>
@@ -258,12 +210,7 @@
                 </ul>
               </div>
               <div class="select partner-select">
-                <input
-                  class="select-input"
-                  type="hidden"
-                  name="age"
-                  value="Выберите возраст"
-                />
+                <input class="select-input" type="hidden" name="age" value="Выберите возраст" />
                 <div class="select__head select-head">Выберите возраст</div>
                 <ul class="select__list" style="display: none">
                   <li class="select__item">Выберите возраст</li>
@@ -277,10 +224,7 @@
                     <img src="./img/footer/social/VK.svg" alt="vk" />
                   </a>
                   <a href="#">
-                    <img
-                      src="./img/footer/social/WhatsApp.svg"
-                      alt="whatsapp"
-                    />
+                    <img src="./img/footer/social/WhatsApp.svg" alt="whatsapp" />
                   </a>
                   <a class="social-links-tg" href="#" alt="telegram"></a>
                   <a class="social-links-inst" href="#" alt="instagram"></a>
@@ -289,198 +233,204 @@
               </div>
               <!-- /.partner-social-links -->
               <input class="list-input" placeholder="Введите сайт" />
-              <input
-                class="list-input list-input--last"
-                placeholder="Введите контакты"
-              />
+              <input class="list-input list-input--last" placeholder="Номер телефона" />
             </div>
             <!-- /.iput-list -->
-            <textarea
-              class="input-descrip"
-              placeholder="Введите описание"
-            ></textarea>
+            <textarea class="input-descrip" placeholder="Введите описание"></textarea>
           </div>
           <button class="save-button" type="submit">Сохранить</button>
         </div>
-        </form>
-        
-        <!-- /.partner__input-info -->
-      </div>
-    </section>
-    <!-- /.partner -->
+      </form>
 
-    <section class="detail">
-      <div class="detail__rectangle">
-        <h1 class="detail-title">
-          Разблокируй дополнительные опции с платным тарифом
-        </h1>
-        <button class="detail-btn">Подробнее</button>
-      </div>
-      <img
-        class="detail__img"
-        src="img/partner/detail-pets.jpg"
-        alt="pet image"
-      />
-    </section>
-    <section class="partner-news">
-      <div class="container">
-        <div class="partner-wrapper">
-          <h2 class="partner__title">Ваши новости</h2>
-          <div class="slider-news">
-            <div class="slider-wrapper">
-              <div class="slide">
-                <div class="slide-header">
-                  <h4 class="new-title">Длинное название</h4>
-                  <div class="new-info">
-                    <div class="new-site">webwebweb.com</div>
-                    <div class="new-addInfo">какая-то информация</div>
-                  </div>
-                </div>
-                <div class="slide-img"></div>
-                <div class="slide-footer">
-                  <p class="new-description">
-                    Описание Описание Описание Описание Описание Описание
-                    Описание Описание Описание Описание Описание Описание
-                  </p>
-                </div>
-                <div class="new-link">
-                  <a href="#" class="new__link">Редактировать</a>
+      <!-- /.partner__input-info -->
+    </div>
+  </section>
+  <!-- /.partner -->
+
+  <section class="detail">
+    <div class="detail__rectangle">
+      <h1 class="detail-title">
+        Разблокируй дополнительные опции с платным тарифом
+      </h1>
+      <button class="detail-btn">Подробнее</button>
+    </div>
+    <img class="detail__img" src="img/partner/detail-pets.jpg" alt="pet image" />
+  </section>
+  <section class="partner-news">
+    <div class="container">
+      <div class="partner-wrapper">
+        <h2 class="partner__title">Ваши новости</h2>
+        <div class="slider-news">
+          <div class="slider-wrapper">
+            <div class="slide">
+              <div class="slide-header">
+                <h4 class="new-title">Длинное название</h4>
+                <div class="new-info">
+                  <div class="new-site">webwebweb.com</div>
+                  <div class="new-addInfo">какая-то информация</div>
                 </div>
               </div>
-              <div class="slide">
-                <div class="slide-header">
-                  <h4 class="new-title">Длинное название</h4>
-                  <div class="new-info">
-                    <div class="new-site">webwebweb.com</div>
-                    <div class="new-addInfo">какая-то информация</div>
-                  </div>
-                </div>
-                <div class="slide-img">
-                  <!-- <img src="#" alt="" class="slide__img"/>   -->
-                </div>
-                <div class="slide-footer">
-                  <p class="new-description">
-                    Описание Описание Описание Описание Описание Описание
-                    Описание Описание Описание Описание Описание Описание
-                  </p>
-                </div>
-                <div class="new-link">
-                  <a href="#" class="new__link">Редактировать</a>
-                </div>
+              <div class="slide-img"></div>
+              <div class="slide-footer">
+                <p class="new-description">
+                  Описание Описание Описание Описание Описание Описание
+                  Описание Описание Описание Описание Описание Описание
+                </p>
+              </div>
+              <div class="new-link">
+                <a href="#" class="new__link">Редактировать</a>
               </div>
             </div>
-          </div>
-        </div>
-        <h2 class="subtitle">Добавить новость</h2>
-        <form action="" class="addNew">
-          <div class="small-imgs">
-            <div class="upload-file__wrapper">
-              <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 2">Загрузить</span>
-              </label>
-            </div>
-            <div class="upload-file__wrapper">
-              <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple  accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 3">Загрузить</span>
-              </label>
-            </div>
-          </div>
-          <div class="small-imgs">
-            <div class="upload-file__wrapper">
-              <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 2">Загрузить</span>
-              </label>
-            </div>
-            <div class="upload-file__wrapper">
-              <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple  accept="image/jpeg,image/png,image/gif">
-            <label class="upload-file__label" for="upload-file__input">
-              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225" stroke="#F96B0A" stroke-width="2"/>
-<path d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z" fill="#F96B0A"/>
-</svg>
-                <span class="upload-file__text 3">Загрузить</span>
-              </label>
-            </div>
-          </div>
-          <textarea
-              class="input-descrip"
-              placeholder="Введите описание"
-            ></textarea> 
-          <button class="new-link" type="submit">
-                  <a href="#" class="new__link">Опубликовать</a>
-                </button>
-        </form>
-      </div>
-    </section>
-    <footer class="footer footer--sixth">
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="footer__text">
-            <div class="footer__title">Будьте в курсе событий</div>
-            <form class="footer__form">
-              <input type="email" placeholder="Ваш e-mail*" />
-              <input type="text" placeholder="Ваше имя" />
-              <button>Подписаться</button>
-            </form>
-            <div class="footer__images">
-              <div class="footer__logo">
-                <img src="./img/footer/logo.svg" alt="" />
-              </div>
-            </div>
-            <div class="footer__contacts">
-              <div class="footer__company-about">
-                <div class="footer__company-about-item">
-                  © L4P 2022 "Лук фо паус"
-                </div>
-                <div class="footer__company-about-item">
-                  <a>Политика конфиденциальности</a>>
+            <div class="slide">
+              <div class="slide-header">
+                <h4 class="new-title">Длинное название</h4>
+                <div class="new-info">
+                  <div class="new-site">webwebweb.com</div>
+                  <div class="new-addInfo">какая-то информация</div>
                 </div>
               </div>
-              <div class="footer__contacts-data">
-                <div class="footer__contacts-social">
-                  <a class="footer__contacts-social-link" href="">
-                    <img src="./img/footer/social/VK.svg" alt="vk" />
-                  </a>
-                  <a class="footer__contacts-social-link" href="">
-                    <img
-                      src="./img/footer/social/WhatsApp.svg"
-                      alt="whatsapp"
-                    />
-                  </a>
-                  <a class="footer__contacts-social-link" href="">
-                    <img src="./img/footer/social/TG.svg" alt="telegram" />
-                  </a>
-                  <a class="footer__contacts-social-link" href="">
-                    <img
-                      src="./img/footer/social/Instagram.svg"
-                      alt="instagram"
-                    />
-                  </a>
-                </div>
-                <div class="footer__contacts-mobile">+375 29 718 54 48</div>
+              <div class="slide-img">
+                <!-- <img src="#" alt="" class="slide__img"/>   -->
+              </div>
+              <div class="slide-footer">
+                <p class="new-description">
+                  Описание Описание Описание Описание Описание Описание
+                  Описание Описание Описание Описание Описание Описание
+                </p>
+              </div>
+              <div class="new-link">
+                <a href="#" class="new__link">Редактировать</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/select.js"></script>
-    <script src="js/partner.js"></script>
-  </body>
+      <h2 class="subtitle">Добавить новость</h2>
+      <form action="" class="addNew">
+        <div class="small-imgs">
+          <div class="upload-file__wrapper">
+            <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple
+              accept="image/jpeg,image/png,image/gif">
+            <label class="upload-file__label" for="upload-file__input">
+              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                  stroke="#F96B0A" stroke-width="2" />
+                <path
+                  d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                  fill="#F96B0A" />
+              </svg>
+              <span class="upload-file__text 2">Загрузить</span>
+            </label>
+          </div>
+          <div class="upload-file__wrapper">
+            <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple
+              accept="image/jpeg,image/png,image/gif">
+            <label class="upload-file__label" for="upload-file__input">
+              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                  stroke="#F96B0A" stroke-width="2" />
+                <path
+                  d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                  fill="#F96B0A" />
+              </svg>
+              <span class="upload-file__text 3">Загрузить</span>
+            </label>
+          </div>
+        </div>
+        <div class="small-imgs">
+          <div class="upload-file__wrapper">
+            <input type="file" name="files2" id="upload-file__input 1" class="upload-file__input 2" multiple
+              accept="image/jpeg,image/png,image/gif">
+            <label class="upload-file__label" for="upload-file__input">
+              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                  stroke="#F96B0A" stroke-width="2" />
+                <path
+                  d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                  fill="#F96B0A" />
+              </svg>
+              <span class="upload-file__text 2">Загрузить</span>
+            </label>
+          </div>
+          <div class="upload-file__wrapper">
+            <input type="file" name="files3" id="upload-file__input 2" class="upload-file__input 3" multiple
+              accept="image/jpeg,image/png,image/gif">
+            <label class="upload-file__label" for="upload-file__input">
+              <svg class="upload-file__icon" width="25" height="34" viewBox="0 0 25 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.35 12.8125H5C2.79086 12.8125 1 14.6034 1 16.8125V28.8125C1 31.0216 2.79086 32.8125 5 32.8125H20C22.2091 32.8125 24 31.0216 24 28.8125V16.8125C24 14.6034 22.2091 12.8125 20 12.8125H14.225"
+                  stroke="#F96B0A" stroke-width="2" />
+                <path
+                  d="M13.6446 0.292892C13.2541 -0.0976315 12.6209 -0.0976315 12.2304 0.292892L5.86643 6.65685C5.47591 7.04738 5.47591 7.68054 5.86643 8.07107C6.25696 8.46159 6.89012 8.46159 7.28065 8.07107L12.9375 2.41421L18.5944 8.07107C18.9849 8.46159 19.618 8.46159 20.0086 8.07107C20.3991 7.68054 20.3991 7.04738 20.0086 6.65685L13.6446 0.292892ZM13.9375 22.4375L13.9375 1H11.9375L11.9375 22.4375H13.9375Z"
+                  fill="#F96B0A" />
+              </svg>
+              <span class="upload-file__text 3">Загрузить</span>
+            </label>
+          </div>
+        </div>
+        <textarea class="input-descrip" placeholder="Введите описание"></textarea>
+        <button class="new-link" type="submit">
+          <a href="#" class="new__link">Опубликовать</a>
+        </button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer footer--sixth">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__text">
+          <div class="footer__title">Будьте в курсе событий</div>
+          <form class="footer__form">
+            <input type="email" placeholder="Ваш e-mail*" />
+            <input type="text" placeholder="Ваше имя" />
+            <button>Подписаться</button>
+          </form>
+          <div class="footer__images">
+            <div class="footer__logo">
+              <img src="./img/footer/logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__company-about">
+              <div class="footer__company-about-item">
+                © L4P 2022 "Лук фо паус"
+              </div>
+              <div class="footer__company-about-item">
+                <a>Политика конфиденциальности</a>>
+              </div>
+            </div>
+            <div class="footer__contacts-data">
+              <div class="footer__contacts-social">
+                <a class="footer__contacts-social-link" href="">
+                  <img src="./img/footer/social/VK.svg" alt="vk" />
+                </a>
+                <a class="footer__contacts-social-link" href="">
+                  <img src="./img/footer/social/WhatsApp.svg" alt="whatsapp" />
+                </a>
+                <a class="footer__contacts-social-link" href="">
+                  <img src="./img/footer/social/TG.svg" alt="telegram" />
+                </a>
+                <a class="footer__contacts-social-link" href="">
+                  <img src="./img/footer/social/Instagram.svg" alt="instagram" />
+                </a>
+              </div>
+              <div class="footer__contacts-mobile">+375 29 718 54 48</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/select.js"></script>
+  <script src="js/partner.js"></script>
+</body>
+
 </html>
