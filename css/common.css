@@ -269,7 +269,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 1127px; 
+    width: 100%;
     height: 167px;
     background: #f96b0a;
     border-radius: 0px 10px 10px 0px;
