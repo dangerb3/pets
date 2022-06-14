@@ -442,3 +442,15 @@ color: #000000;
   height: 93px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
+.social-links{
+  display: flex;
+  justify-content: space-between;
+}
+.social-links a{
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.social-links a:not(:last-child){
+  margin-right: 10px;
+}

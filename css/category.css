@@ -164,6 +164,8 @@ width: 17%;
     padding-top: 25px;
     padding-bottom: 21px;
     max-width: 150px;
+        display: flex;
+    flex-direction: column;
 }
 .fit-title{
   font-weight: 500;
@@ -355,4 +357,13 @@ color: #000000;
 .age-item.active, .bread-item.active{
   color:#F96B0A;
   text-decoration: underline;
+}
+.category-filter .filter-button{
+   font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 2px 19px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }

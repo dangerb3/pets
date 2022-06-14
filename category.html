@@ -208,7 +208,7 @@
           </div>
           <div class="category-line"></div>
           <div class="category-main">
-            <aside class="category-filter">
+            <form action="" class="category-filter">
               <h5 class="fit-title">Фильтры:</h5>
               <div class="select">
                 <input
@@ -225,48 +225,49 @@
                   <li class="select__item">Минск</li>
                 </ul>
               </div>
-              <div class="animal">
+              <div class="animal parent">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="animal"
+                  value="Кошки"
+                />
                 <div class="animal-item active"><img src="./img/category/cat-orange.svg" alt="" class="animal_icon"><img src="./img/category/cat.svg" alt="" class="animal_icon2">Кошки</div>
                 <div class="animal-item"><img src="./img/category/dog.svg" alt="" class="animal_icon"><img src="./img/category/dog-white.svg" alt="" class="animal_icon2">Собаки</div>
               </div>
-              <div class="age">
+              <div class="age parent">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="age"
+                  value=""
+                />
                 <h5 class="age-title">Возраст</h5>
                 <ul class="age-list">
-                  <li class="age-item">
-                    до 1 года
-                  </li>
-                  <li class="age-item active">
-                    от 1 до 3 лет
-                  </li>
-                  <li class="age-item">
-                    от 3 до 9 лет
-                  </li>
-                  <li class="age-item">
-                    после 9 лет
-                  </li>
+                  <li class="age-item">до 1 года</li>
+                  <li class="age-item active">от 1 до 3 лет</li>
+                  <li class="age-item">от 3 до 9 лет</li>
+                  <li class="age-item">после 9 лет</li>
                 </ul>
               </div>
-              <div class="bread">
+              <div class="bread parent">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="bread"
+                  value=""
+                />
                 <h5 class="bread-title">Порода</h5>
                 <ul class="bread-list">
-                  <li class="bread-item">
-                    Порода 1
-                  </li>
-                  <li class="bread-item">
-                    Порода 2
-                  </li>
-                  <li class="bread-item">
-                    Порода 3
-                  </li>
-                  <li class="bread-item">
-                    Порода 4
-                  </li>
-                  <li class="bread-item">
-                    Порода 5
-                  </li>
+                  <li class="bread-item">Порода 1</li>
+                  <li class="bread-item">Порода 2</li>
+                  <li class="bread-item">Порода 3</li>
+                  <li class="bread-item">Порода 4</li>
+                  <li class="bread-item">Порода 5</li>
                 </ul>
               </div>
-            </aside>
+              <input class="filter-button" type="submit" value="Применить" />
+            </form>
             <div class="category-right">
               <div class="swiper filter-slider">
             <!-- Additional required wrapper -->

@@ -125,7 +125,7 @@ body {
 
 .title::before {
     content: "";
-    background-image: url('/img/index1/paw-title.svg');
+    background-image: url('../img/index1/paw-title.svg');
 
     width: 21px;
     height: 24px;
@@ -263,13 +263,14 @@ body {
     display: flex;
     align-items: center;
     margin-top: 79px;
+    max-width: calc((100vw - 1000px)/2 + 1150px);
 }
 
 .detail__rectangle {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     position: relative;
-    width: 1127px; 
+    width: 86%;
     height: 167px;
     background: #f96b0a;
     border-radius: 0px 10px 10px 0px;
@@ -300,32 +301,16 @@ body {
     line-height: 37px;
     color: #ffffff;
     margin-bottom: 30px;
-}
-
-.detail-btn {
-    position: relative;
-    width: 96px;
-    height: 23px;
-    padding: 3px 10px;
-    border-radius: 6px;
-    background: #ffffff;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #f96b0a;
-    cursor: pointer;
-    align-self: end;
-    margin-right: 34px;
-}
-
-.detail-btn::after {
-    content: "";
     position: absolute;
-    width: 48px;
-    height: 48px;
-    top: -6px;
-    right: -35px;
-    background-image: url(../img/partner/detail-paw.svg);
-    background-repeat: no-repeat;
+    right: 36px;
+    max-width: 923px;
+    width: 85%;
+    text-align: center;
+
 }
+.detail__rectangle .new-link{
+right: 100px;
+    bottom: 26px;
+}
+
+

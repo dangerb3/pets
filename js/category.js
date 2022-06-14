@@ -1,9 +1,11 @@
 jQuery(($) => {
   function changeClassClick(par){
-    $(par).on("click", function () {
+    $(par).on("click", function (e) {
       if (!$(this).hasClass("active")) {
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
+        console.log($(this).closest(".parent").children("input"));
+        $(this).closest(".parent").children("input").val($(this).text());
       }
     });
   }
